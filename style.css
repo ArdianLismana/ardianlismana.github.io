@@ -1,0 +1,196 @@
+
+
+
+
+#navbar{
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  padding: 0;
+  background-color: rgba(5, 4, 4, 0.658);
+ 
+}
+
+
+
+@media(min-width : 992px){
+
+  #navbar{
+    height: 50px;
+  }
+
+  .nav-link{
+    height: 50px;
+    line-height: 30px;
+  }
+
+
+  .nav-link:hover{
+    display: inline-block;
+    padding-bottom: -2px;
+    border-bottom: 2px solid blue;
+  }
+
+  #galery:hover{
+    transform: scale(1.1);
+  }
+
+}
+
+
+
+
+
+
+
+
+#nama{
+  position: relative;
+  font-family: viga, sans-serif;
+ 
+}
+
+
+
+
+
+
+.img{
+  position: relative;
+  width:50 ;
+  z-index: 2;
+
+}
+
+ .tran{
+  background-color: rgba(0, 0, 0, 0.466);
+  padding-top: 5rem;
+  
+  
+} 
+
+.jumbotron{
+  
+  background-image: url(img2/galaxsy.jpg);
+  background-size: cover;
+  color: rgb(230, 225, 217);
+  
+}
+
+
+
+ .jumbotron .rain{
+   position: absolute;
+  
+ }
+
+
+
+.jumbotron h1{
+  color: aliceblue;
+  text-shadow: 2px 2px 3px  black;
+  font-weight: bold;
+  /* font-family: Viga; */
+  
+}
+
+
+.jumbotron svg{
+  position: relative;
+  z-index: 2;
+}
+
+#about{
+  background: #fff;
+  position: relative;
+  z-index: 3;
+}
+
+
+
+
+
+#frojects{
+  background-color: #8A8B80;
+}
+
+#frojects h2{
+  margin-bottom: 40px;
+}
+
+.col h2{
+  font-family: viga;
+  color: white;
+  text-shadow: 0 0 2px black;
+}
+
+.col p{
+  font-size: 12px;
+}
+
+
+#footer{
+  background-color: #8A8B80;
+  color: wheat;
+  padding-bottom: 20px;
+
+}
+
+
+
+#galery{
+  transition: 0.5s;
+  border-radius: 5px;
+}
+
+
+
+/* css effec hujan */
+
+
+
+
+
+i{
+  position: absolute;
+  height: 5px;
+  background: linear-gradient(transparent,#fff);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  animation: animate 5s linear infinite;
+}
+
+
+
+
+
+
+i:nth-child(3n+1){
+
+  background: linear-gradient(transparent,rgb(95, 140, 238));
+
+}
+
+i:nth-child(3n+2){
+
+  background: linear-gradient(transparent,rgb(201, 229, 255));
+
+}
+
+i:nth-child(3n+3){
+
+  background: linear-gradient(transparent,rgb(205, 240, 245));
+
+}
+
+@keyframes animate{
+  0%{
+    transform: translatey(-200px);
+  }
+  100%{
+    transform: translatey(calc(100vh + 200px));
+  }
+}
+
+
+
