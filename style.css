@@ -3,11 +3,11 @@
 
 
 #navbar{
-  position: absolute;
+  position: fixed;
   z-index: 999;
   width: 100%;
   padding: 0;
-  background-color: rgba(5, 4, 4, 0.658);
+  background-color: rgb(5, 4, 4);
  
 }
 
@@ -57,10 +57,45 @@
 
 .img{
   position: relative;
-  width:50 ;
   z-index: 2;
+  margin: auto;
 
 }
+
+
+
+@media(max-width : 400px){
+
+  .img{
+    position: relative;
+    width:100px;
+    z-index: 2;
+    margin: auto;
+    border: none;
+  
+  }
+
+  .jumbotron h1{
+    color: rgb(255, 240, 242);
+    text-shadow: 2px 2px 3px  black;
+    font-size: 20px;
+    
+    
+  }
+
+  .jumbotron p{
+    font-size: 15px;
+  }
+
+  #about .col-md-4{
+
+    font-size: 15px;
+
+  }
+  
+
+}
+
 
  .tran{
   background-color: rgba(0, 0, 0, 0.466);
@@ -71,7 +106,7 @@
 
 .jumbotron{
   
-  background-image: url(img2/galaxsy.jpg);
+  background-color: rgb(1, 1, 43);
   background-size: cover;
   color: rgb(230, 225, 217);
   
@@ -101,21 +136,36 @@
 }
 
 #about{
-  background: #fff;
+  background:#161623;
   position: relative;
   z-index: 3;
+  
 }
 
 
-
+#about .col-md-4{
+  background-color: rgba(0, 0, 0, 0.075);
+  margin: 20px;
+  width: 300px;
+  padding: 20px;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 1px rgb(0, 0, 0);
+  
+}
 
 
 #frojects{
-  background-color: #8A8B80;
+  background-color: #061f33;
 }
 
 #frojects h2{
   margin-bottom: 40px;
+}
+
+.col-md-4  .card{
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.055);
 }
 
 .col h2{
@@ -128,9 +178,17 @@
   font-size: 12px;
 }
 
+form label{
+  color: #fff;
+}
+
+#contact{
+  background-color:#161623;
+}
+
 
 #footer{
-  background-color: #8A8B80;
+  background-color:  #061f33;
   color: wheat;
   padding-bottom: 20px;
 
@@ -139,6 +197,7 @@
 
 
 #galery{
+  position: relative;
   transition: 0.5s;
   border-radius: 5px;
 }
@@ -153,7 +212,7 @@
 
 i{
   position: absolute;
-  height: 5px;
+  height: 1px;
   background: linear-gradient(transparent,#fff);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
@@ -188,7 +247,7 @@ i:nth-child(3n+3){
     transform: translatey(-200px);
   }
   100%{
-    transform: translatey(calc(100vh + 200px));
+    transform: translatey(calc(100vh + 20px));
   }
 }
 
